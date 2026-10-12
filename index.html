@@ -1,0 +1,968 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bruno Lima | Desenvolvedor Full Stack & Especialista em Soluções Corporativas</title>
+  
+  <!-- Meta Tags SEO & Executivas -->
+  <meta name="description" content="Portfólio Executivo de Bruno Lima - Desenvolvedor Full Stack na Magiccomp. Especialista em Node.js, Cloud AWS S3, BullMQ/Redis, Segurança, LGPD e projeto SIGACRC.">
+  <meta name="keywords" content="Bruno Lima, SIGACRC, Desenvolvedor Full Stack, Node.js, Express, MongoDB, AWS S3, Redis, BullMQ, LGPD, Fortinet, Cybersecurity">
+  <meta name="author" content="Bruno Lima">
+  <meta property="og:title" content="Bruno Lima | Desenvolvedor Full Stack & Soluções Corporativas">
+  <meta property="og:description" content="Engenharia de software com foco em segurança, escalabilidade e arquitetura em nuvem. Destaque para o sistema SIGACRC.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://bruno-limahg.github.io/">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome 6 Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Estilos Customizados -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- Background Ambiental -->
+  <div class="bg-ambient"></div>
+  <div class="bg-grid"></div>
+
+  <!-- ==========================================================================
+       HEADER & NAVBAR
+       ========================================================================== -->
+  <header class="header-nav">
+    <div class="container nav-container">
+      <a href="#hero" class="brand-logo" aria-label="Página Inicial">
+        <div class="brand-monogram">BL</div>
+        <div class="brand-info">
+          <span class="brand-name">Bruno Lima</span>
+          <span class="brand-title">Full Stack & Security</span>
+        </div>
+      </a>
+
+      <!-- Menu Principal -->
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#hero" class="nav-link active">Início</a></li>
+        <li><a href="#sobre" class="nav-link">Sobre</a></li>
+        <li><a href="#sigacrc" class="nav-link">SIGACRC (Destaque)</a></li>
+        <li><a href="#certificacoes" class="nav-link">Certificações</a></li>
+        <li><a href="#habilidades" class="nav-link">Competências</a></li>
+        <li><a href="#projetos" class="nav-link">Projetos</a></li>
+        <li><a href="#contato" class="nav-link">Contato</a></li>
+      </ul>
+
+      <!-- Ações Diretas -->
+      <div class="nav-actions">
+        <a href="https://www.linkedin.com/in/bruno-lima-20b099325/" target="_blank" rel="noopener noreferrer" class="btn btn-linkedin btn-sm" aria-label="Perfil do LinkedIn">
+          <i class="fa-brands fa-linkedin"></i>
+          <span>LinkedIn</span>
+        </a>
+        <a href="https://github.com/Bruno-LimaHG" target="_blank" rel="noopener noreferrer" class="btn btn-github btn-sm" aria-label="Perfil do GitHub">
+          <i class="fa-brands fa-github"></i>
+          <span>GitHub</span>
+        </a>
+      </div>
+
+      <!-- Botão Mobile -->
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Alternar Menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- ==========================================================================
+         HERO SECTION
+         ========================================================================== -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-content">
+        <div class="hero-text">
+          <div class="badge-executive">
+            <span class="badge-pulse"></span>
+            <span>Disponível para Novos Desafios • Full Stack & Cloud</span>
+          </div>
+
+          <h1 class="hero-title">
+            Transformando processos críticos em <span class="highlight">soluções digitais seguras</span> e escaláveis.
+          </h1>
+
+          <p class="hero-subtitle">
+            Desenvolvedor na <strong>Magiccomp</strong> com atuação em arquiteturas modernas full stack (Node.js & Vue.js), serviços em nuvem (AWS S3), processamento assíncrono e segurança rigorosa com conformidade à LGPD.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#sigacrc" class="btn btn-primary">
+              <i class="fa-solid fa-star"></i>
+              <span>Conhecer o SIGACRC</span>
+            </a>
+            <a href="https://www.linkedin.com/in/bruno-lima-20b099325/" target="_blank" rel="noopener noreferrer" class="btn btn-linkedin">
+              <i class="fa-brands fa-linkedin"></i>
+              <span>Conectar no LinkedIn</span>
+            </a>
+            <a href="https://github.com/Bruno-LimaHG" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+              <i class="fa-brands fa-github"></i>
+              <span>Ver GitHub</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Métricas Executivas de Destaque -->
+        <div class="hero-metrics">
+          <div class="metric-card">
+            <div class="metric-value">
+              <i class="fa-solid fa-shield-halved"></i>
+              <span>100%</span>
+            </div>
+            <div class="metric-label">Autenticação Stateless JWT com Rate Limiting & Helmet</div>
+          </div>
+
+          <div class="metric-card">
+            <div class="metric-value">
+              <i class="fa-solid fa-cloud-arrow-up"></i>
+              <span>AWS S3</span>
+            </div>
+            <div class="metric-label">URLs Pré-Assinadas (Pre-Signed) para Máximo Sigilo</div>
+          </div>
+
+          <div class="metric-card">
+            <div class="metric-value">
+              <i class="fa-solid fa-bolt"></i>
+              <span>BullMQ</span>
+            </div>
+            <div class="metric-label">Filas Assíncronas com Redis para Processamento em Segundo Plano</div>
+          </div>
+
+          <div class="metric-card">
+            <div class="metric-value">
+              <i class="fa-solid fa-scale-balanced"></i>
+              <span>LGPD</span>
+            </div>
+            <div class="metric-label">Governança, Privacidade e Proteção Integral de Dados Civis</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SEÇÃO SOBRE BRUNO LIMA
+         ========================================================================== -->
+    <section class="section" id="sobre">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-text">
+            <div class="badge-executive">
+              <i class="fa-solid fa-user-tie"></i>
+              <span>Perfil Profissional</span>
+            </div>
+            <h2 class="section-title">Engenharia de software com foco em valor real de negócio</h2>
+            <p>
+              Sou desenvolvedor de software na <span class="company-highlight"><i class="fa-solid fa-building"></i> Magiccomp</span>, focado na criação de ecossistemas corporativos robustos, seguros e de alta confiabilidade.
+            </p>
+            <p>
+              Minha experiência engloba desde a modelagem de APIs RESTful estruturadas em <strong>Node.js/Express</strong> e bancos de dados <strong>MongoDB/Redis</strong>, até a concepção de interfaces reativas e intuitivas. Tenho certificações em segurança da informação (<strong>Fortinet NSE 1 e 2</strong>) e proteção avançada de dados (<strong>Cove Data Protection Advanced</strong>), trazendo uma visão preventiva e estratégica para cada linha de código.
+            </p>
+            <div class="hero-actions">
+              <a href="#contato" class="btn btn-secondary">
+                <i class="fa-solid fa-envelope"></i>
+                <span>Entrar em Contato</span>
+              </a>
+              <a href="https://www.linkedin.com/in/bruno-lima-20b099325/" target="_blank" rel="noopener noreferrer" class="btn btn-linkedin">
+                <i class="fa-brands fa-linkedin"></i>
+                <span>Ver Recomendações no LinkedIn</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Pilares de Atuação -->
+          <div class="pillars-cards">
+            <div class="pillar-card">
+              <i class="fa-solid fa-cubes"></i>
+              <h4>Arquitetura Resiliente</h4>
+              <p>Desacoplamento de serviços, processamento em filas (BullMQ) e comunicação bidirecional em tempo real (Socket.io).</p>
+            </div>
+            <div class="pillar-card">
+              <i class="fa-solid fa-lock"></i>
+              <h4>Cibersegurança & LGPD</h4>
+              <p>Mapeamento de riscos, proteção contra força bruta/DDoS, JWT sem fallbacks inseguros e sigilo de documentos na AWS S3.</p>
+            </div>
+            <div class="pillar-card">
+              <i class="fa-solid fa-chart-line"></i>
+              <h4>Observabilidade & Métricas</h4>
+              <p>Logging estruturado com Winston/Morgan, auditoria de requisições e dashboards executivos (Power BI).</p>
+            </div>
+            <div class="pillar-card">
+              <i class="fa-solid fa-vial-circle-check"></i>
+              <h4>Qualidade & Integração</h4>
+              <p>Testes automatizados com Jest & Supertest, rotinas autônomas de backup e pipelines contínuos de entrega.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         PROJETO DESTAQUE: SIGACRC
+         ========================================================================== -->
+    <section class="section" id="sigacrc">
+      <div class="container">
+        <div class="section-header">
+          <div class="badge-executive">
+            <i class="fa-solid fa-trophy"></i>
+            <span>Projeto Carro-Chefe</span>
+          </div>
+          <h2 class="section-title">SIGACRC — Gestão Digital para Cartórios de Registro Civil</h2>
+          <p class="section-subtitle">
+            Um sistema corporativo completo para modernização e desburocratização de habilitações de casamento civil via internet, com foco em segurança documental e conformidade legal.
+          </p>
+        </div>
+
+        <div class="sigacrc-featured-card">
+          <!-- Cabeçalho do Card -->
+          <div class="sigacrc-header">
+            <div class="sigacrc-titles">
+              <h3>
+                <i class="fa-solid fa-stamp"></i>
+                <span>SIGACRC</span> — Sistema Integrado de Gestão
+              </h3>
+              <p class="sigacrc-tagline">
+                Eliminação de filas físicas, triagem inteligente de pedidos e tramitação digital segura de certidões.
+              </p>
+              <div class="sigacrc-tech-pills">
+                <span class="badge-tech"><i class="fa-brands fa-node-js"></i> Node.js</span>
+                <span class="badge-tech"><i class="fa-solid fa-server"></i> Express REST API</span>
+                <span class="badge-tech"><i class="fa-solid fa-database"></i> MongoDB & Mongoose</span>
+                <span class="badge-tech"><i class="fa-brands fa-aws"></i> AWS S3 (Pre-Signed)</span>
+                <span class="badge-tech"><i class="fa-solid fa-memory"></i> Redis & BullMQ</span>
+                <span class="badge-tech"><i class="fa-solid fa-comments"></i> WebSocket / Socket.io</span>
+                <span class="badge-tech"><i class="fa-solid fa-key"></i> JWT Stateless</span>
+                <span class="badge-tech"><i class="fa-solid fa-vial"></i> Jest & Supertest</span>
+                <span class="badge-tech"><i class="fa-solid fa-shield-halved"></i> LGPD Compliant</span>
+              </div>
+            </div>
+
+            <div class="sigacrc-cta-group">
+              <a href="https://github.com/Bruno-LimaHG/SIGACRC" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                <i class="fa-brands fa-github"></i>
+                <span>Ver Repositório no GitHub</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Grade Principal do SIGACRC -->
+          <div class="sigacrc-grid">
+            <div class="sigacrc-story">
+              <p class="sigacrc-lead">
+                O <strong>SIGACRC</strong> nasceu para responder a um desafio real do setor público e cartorário: o atendimento presencial moroso e burocrático para casamentos civis. Através de uma plataforma unificada, requerentes realizam o cadastro de ponta a ponta na web, enquanto escreventes e oficiais analisam documentos, validam certidões e despacham pendências com total rastreabilidade.
+              </p>
+
+              <div class="pillars-grid">
+                <div class="pillar-item">
+                  <div class="pillar-icon">
+                    <i class="fa-solid fa-file-shield"></i>
+                  </div>
+                  <h4 class="pillar-title">AWS S3 Pre-Signed URLs</h4>
+                  <p class="pillar-desc">
+                    Certidões e dados sigilosos nunca são expostos publicamente. O backend gera URLs temporárias pré-assinadas com tempo de expiração controlado para os escreventes.
+                  </p>
+                </div>
+
+                <div class="pillar-item">
+                  <div class="pillar-icon">
+                    <i class="fa-solid fa-clock-rotate-left"></i>
+                  </div>
+                  <h4 class="pillar-title">Filas Assíncronas (BullMQ)</h4>
+                  <p class="pillar-desc">
+                    Notificações transacionais, processamento de e-mails e compressão de arquivos são gerenciados por workers desacoplados via Redis, mantendo a API ultra rápida.
+                  </p>
+                </div>
+
+                <div class="pillar-item">
+                  <div class="pillar-icon">
+                    <i class="fa-solid fa-headset"></i>
+                  </div>
+                  <h4 class="pillar-title">Chat em Tempo Real</h4>
+                  <p class="pillar-desc">
+                    Módulo de "Atendimentos" integrado com Socket.io, permitindo que noivos tirem dúvidas e recebam orientações dos funcionários sem deslocamento físico.
+                  </p>
+                </div>
+
+                <div class="pillar-item">
+                  <div class="pillar-icon">
+                    <i class="fa-solid fa-scale-unbalanced-flip"></i>
+                  </div>
+                  <h4 class="pillar-title">Conformidade com a LGPD</h4>
+                  <p class="pillar-desc">
+                    Implementação de controles estritos de privacidade, autorização baseada em cargos (RBAC), logs de auditoria e documento formal de Política de Privacidade LGPD.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card de Fluxo de Arquitetura -->
+            <div class="architecture-box">
+              <div class="arch-header">
+                <h4><i class="fa-solid fa-diagram-project"></i> Arquitetura em Camadas</h4>
+                <span class="badge-tech">Micro-serviços & Queues</span>
+              </div>
+
+              <div class="arch-flow-diagram">
+                <div class="arch-node">
+                  <div class="arch-node-info">
+                    <i class="fa-solid fa-desktop"></i>
+                    <div>
+                      <div class="arch-node-name">Frontend Web</div>
+                      <div class="arch-node-sub">Vanilla JS, CSS3, HTML5 & UX Cartorária</div>
+                    </div>
+                  </div>
+                  <span class="arch-badge-tech">Client-Side</span>
+                </div>
+
+                <div class="arch-arrow"><i class="fa-solid fa-arrow-down"></i> REST / WebSocket</div>
+
+                <div class="arch-node">
+                  <div class="arch-node-info">
+                    <i class="fa-brands fa-node-js"></i>
+                    <div>
+                      <div class="arch-node-name">API REST Node.js & Express</div>
+                      <div class="arch-node-sub">JWT Auth, Rate Limit, Helmet, Winston</div>
+                    </div>
+                  </div>
+                  <span class="arch-badge-tech">Core Backend</span>
+                </div>
+
+                <div class="arch-arrow"><i class="fa-solid fa-arrow-down"></i> Dispatch & Storage</div>
+
+                <div class="arch-node">
+                  <div class="arch-node-info">
+                    <i class="fa-brands fa-aws"></i>
+                    <div>
+                      <div class="arch-node-name">AWS S3 Pre-Signed Storage</div>
+                      <div class="arch-node-sub">Armazenamento Criptografado de Certidões</div>
+                    </div>
+                  </div>
+                  <span class="arch-badge-tech">Cloud S3</span>
+                </div>
+
+                <div class="arch-node">
+                  <div class="arch-node-info">
+                    <i class="fa-solid fa-layer-group"></i>
+                    <div>
+                      <div class="arch-node-name">BullMQ + Redis & MongoDB</div>
+                      <div class="arch-node-sub">Jobs em Segundo Plano + Persistência Mongoose</div>
+                    </div>
+                  </div>
+                  <span class="arch-badge-tech">Queues & DB</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Abas Interativas de Detalhes -->
+          <div class="sigacrc-tabs-container">
+            <div class="tab-nav">
+              <button class="tab-btn active" data-tab="tab-fluxo">
+                <i class="fa-solid fa-route"></i>
+                <span>Fluxo do Requerente</span>
+              </button>
+              <button class="tab-btn" data-tab="tab-painel">
+                <i class="fa-solid fa-id-card-clip"></i>
+                <span>Painel do Escrevente</span>
+              </button>
+              <button class="tab-btn" data-tab="tab-seguranca">
+                <i class="fa-solid fa-shield-virus"></i>
+                <span>Segurança & Confiabilidade</span>
+              </button>
+            </div>
+
+            <!-- Conteúdo Aba 1 -->
+            <div class="tab-content active" id="tab-fluxo">
+              <ul class="tab-details-list">
+                <li>
+                  <i class="fa-solid fa-check"></i>
+                  <span><strong>Autenticação Segura:</strong> Cadastro e login dos noivos protegidos por token JWT stateless via cabeçalho HTTP <code>Authorization: Bearer</code>.</span>
+                </li>
+                <li>
+                  <i class="fa-solid fa-check"></i>
+                  <span><strong>Preenchimento Guiado em Etapas:</strong> Interface em wizard com validação de campos obrigatórios, regime de bens e dados dos cônjuges.</span>
+                </li>
+                <li>
+                  <i class="fa-solid fa-check"></i>
+                  <span><strong>Consulta Automatizada de CEP:</strong> Integração assíncrona com ViaCEP para autopreenchimento imediato de logradouros, bairros e cidades.</span>
+                </li>
+                <li>
+                  <i class="fa-solid fa-check"></i>
+                  <span><strong>Upload Digital de Certidões:</strong> Envio de comprovantes e documentos civis diretamente para a nuvem da AWS sem expor servidores.</span>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Conteúdo Aba 2 -->
+            <div class="tab-content" id="tab-painel">
+              <ul class="tab-details-list">
+                <li>
+                  <i class="fa-solid fa-check"></i>
+                  <span><strong>Painel Administrativo:</strong> Acesso restrito a escreventes e oficiais com controle de permissão baseado em papéis (RBAC).</span>
+                </li>
+                <li>
+                  <i class="fa-solid fa-check"></i>
+                  <span><strong>Trâmite de Status em Tempo Real:</strong> Gestão de estados do pedido (Em Análise, Exigência Documental, Aprovado, Recusado).</span>
+                </li>
+                <li>
+                  <i class="fa-solid fa-check"></i>
+                  <span><strong>Visualizador Seguro de Documentos:</strong> Geração instantânea de links temporários (Pre-Signed) para visualização confidencial dos anexos.</span>
+                </li>
+                <li>
+                  <i class="fa-solid fa-check"></i>
+                  <span><strong>Sistema de Atendimentos:</strong> Histórico de conversas e mensagens com os noivos diretamente na plataforma.</span>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Conteúdo Aba 3 -->
+            <div class="tab-content" id="tab-seguranca">
+              <ul class="tab-details-list">
+                <li>
+                  <i class="fa-solid fa-check"></i>
+                  <span><strong>Defesa contra Ataques:</strong> Rate limiting com <code>express-rate-limit</code> contra brute force e cabeçalhos HTTP fortalecidos via <code>Helmet</code>.</span>
+                </li>
+                <li>
+                  <i class="fa-solid fa-check"></i>
+                  <span><strong>Logging Estruturado:</strong> Rastreamento ponta a ponta com <strong>Winston</strong> e <strong>Morgan</strong> para auditoria forense e monitoramento.</span>
+                </li>
+                <li>
+                  <i class="fa-solid fa-check"></i>
+                  <span><strong>Suíte de Testes Automatizados:</strong> Testes de integração e rotas executados via <strong>Jest</strong> e <strong>Supertest</strong>.</span>
+                </li>
+                <li>
+                  <i class="fa-solid fa-check"></i>
+                  <span><strong>Rotina de Backup Automatizada:</strong> Scripts integrados para exportação preventiva de coleções do MongoDB.</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Rodapé de Ações do SIGACRC -->
+          <div class="sigacrc-actions">
+            <div>
+              <span style="color: var(--text-muted); font-size: 0.9rem;">
+                <i class="fa-solid fa-code-branch"></i> Repositório oficial mantido por Bruno Lima no GitHub.
+              </span>
+            </div>
+            <div class="sigacrc-cta-group">
+              <a href="https://github.com/Bruno-LimaHG/SIGACRC" target="_blank" rel="noopener noreferrer" class="btn btn-github">
+                <i class="fa-brands fa-github"></i>
+                <span>Acessar Código-Fonte</span>
+              </a>
+              <a href="https://www.linkedin.com/in/bruno-lima-20b099325/" target="_blank" rel="noopener noreferrer" class="btn btn-linkedin">
+                <i class="fa-brands fa-linkedin"></i>
+                <span>Conectar no LinkedIn</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SEÇÃO DE CERTIFICAÇÕES OFICIAIS
+         ========================================================================== -->
+    <section class="section" id="certificacoes">
+      <div class="container">
+        <div class="section-header">
+          <div class="badge-executive">
+            <i class="fa-solid fa-certificate"></i>
+            <span>Credenciais Oficiais</span>
+          </div>
+          <h2 class="section-title">Certificações em Cibersegurança & Proteção de Dados</h2>
+          <p class="section-subtitle">
+            Reconhecimento internacional em arquitetura de defesa, conscientização cibernética, governança de backup e idioma global.
+          </p>
+        </div>
+
+        <div class="certifications-grid">
+          <!-- Certificado 1: Fortinet NSE 1 -->
+          <div class="cert-card">
+            <div class="cert-badge-wrapper">
+              <img src="assets/images/fortinet-nse-1.png" alt="Fortinet NSE 1 Certified in Cybersecurity" class="cert-badge-img">
+            </div>
+            <div class="cert-info">
+              <span class="cert-issuer">Fortinet Network Security Expert</span>
+              <h3 class="cert-title">NSE 1 — Certified in Cybersecurity</h3>
+              <p class="cert-desc">
+                Conscientização fundamental sobre vetores de ameaças cibernéticas, engenharia social, segurança de rede e conceitos de proteção corporativa.
+              </p>
+            </div>
+            <div class="cert-footer">
+              <span><i class="fa-solid fa-building-shield"></i> Fortinet Security</span>
+              <span><i class="fa-solid fa-circle-check" style="color: var(--accent-emerald);"></i> Certificado Oficial</span>
+            </div>
+          </div>
+
+          <!-- Certificado 2: Fortinet NSE 2 -->
+          <div class="cert-card">
+            <div class="cert-badge-wrapper">
+              <img src="assets/images/fortinet-nse-2.png" alt="Fortinet NSE 2 Certified in Cybersecurity" class="cert-badge-img">
+            </div>
+            <div class="cert-info">
+              <span class="cert-issuer">Fortinet Network Security Expert</span>
+              <h3 class="cert-title">NSE 2 — Certified in Cybersecurity</h3>
+              <p class="cert-desc">
+                Evolução da cibersegurança moderna: SASE, Zero Trust Network Access (ZTNA), firewalls de próxima geração e defesa contra ameaças avançadas persistentes.
+              </p>
+            </div>
+            <div class="cert-footer">
+              <span><i class="fa-solid fa-building-shield"></i> Fortinet Security</span>
+              <span><i class="fa-solid fa-circle-check" style="color: var(--accent-emerald);"></i> Certificado Oficial</span>
+            </div>
+          </div>
+
+          <!-- Certificado 3: Cove Data Protection -->
+          <div class="cert-card">
+            <div class="cert-badge-wrapper">
+              <img src="assets/images/cove-data-protection.png" alt="Cove Data Protection Advanced Certification" class="cert-badge-img">
+            </div>
+            <div class="cert-info">
+              <span class="cert-issuer">N-able Academy • Class of 2026</span>
+              <h3 class="cert-title">Cove Data Protection — Advanced Certification</h3>
+              <p class="cert-desc">
+                Especialização em continuidade de negócios, estratégias avançadas de backup em nuvem, retenção de dados imutável e recuperação de desastres (DRaaS).
+              </p>
+            </div>
+            <div class="cert-footer">
+              <span><i class="fa-solid fa-cloud-shield"></i> N-able Ecosystem</span>
+              <span><i class="fa-solid fa-calendar-check"></i> Outubro / 2026</span>
+            </div>
+          </div>
+
+          <!-- Certificado 4: Pearson English -->
+          <div class="cert-card">
+            <div class="cert-badge-wrapper" style="background: rgba(30, 41, 59, 0.4);">
+              <i class="fa-solid fa-language" style="font-size: 4.5rem; color: var(--accent-cyan);"></i>
+            </div>
+            <div class="cert-info">
+              <span class="cert-issuer">Pearson Education</span>
+              <h3 class="cert-title">Pearson English — Certificate of Achievement</h3>
+              <p class="cert-desc">
+                Avaliação internacional de proficiência linguística com base na Global Scale of English (GSE 33–52) e Quadro Europeu Comum (CEFR A2-B1+).
+              </p>
+            </div>
+            <div class="cert-footer">
+              <span><i class="fa-solid fa-globe"></i> Global Scale of English</span>
+              <span><i class="fa-solid fa-award" style="color: var(--accent-amber);"></i> Nível 5 / CEFR</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SEÇÃO DE COMPETÊNCIAS & STACK TÉCNICA
+         ========================================================================== -->
+    <section class="section" id="habilidades">
+      <div class="container">
+        <div class="section-header">
+          <div class="badge-executive">
+            <i class="fa-solid fa-code"></i>
+            <span>Arsenal Tecnológico</span>
+          </div>
+          <h2 class="section-title">Habilidades & Stack Técnica</h2>
+          <p class="section-subtitle">
+            Conjunto de tecnologias e ferramentas aplicadas diariamente na concepção de sistemas resilientes, seguros e de alto desempenho.
+          </p>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Backend & APIs -->
+          <div class="skill-category-card">
+            <div class="skill-category-header">
+              <i class="fa-brands fa-node-js"></i>
+              <h4>Backend & APIs</h4>
+            </div>
+            <div class="skill-items">
+              <span class="badge-tech">Node.js</span>
+              <span class="badge-tech">Express.js</span>
+              <span class="badge-tech">RESTful APIs</span>
+              <span class="badge-tech">JWT (Stateless)</span>
+              <span class="badge-tech">WebSocket</span>
+              <span class="badge-tech">Socket.io</span>
+              <span class="badge-tech">Winston & Morgan</span>
+            </div>
+          </div>
+
+          <!-- Cloud & Queues -->
+          <div class="skill-category-card">
+            <div class="skill-category-header">
+              <i class="fa-brands fa-aws"></i>
+              <h4>Cloud & Mensageria</h4>
+            </div>
+            <div class="skill-items">
+              <span class="badge-tech">AWS S3</span>
+              <span class="badge-tech">Pre-Signed URLs</span>
+              <span class="badge-tech">BullMQ</span>
+              <span class="badge-tech">Redis Queue</span>
+              <span class="badge-tech">Background Workers</span>
+              <span class="badge-tech">Docker Basics</span>
+            </div>
+          </div>
+
+          <!-- Bancos de Dados -->
+          <div class="skill-category-card">
+            <div class="skill-category-header">
+              <i class="fa-solid fa-database"></i>
+              <h4>Banco de Dados</h4>
+            </div>
+            <div class="skill-items">
+              <span class="badge-tech">MongoDB</span>
+              <span class="badge-tech">Mongoose ODM</span>
+              <span class="badge-tech">Redis Cache</span>
+              <span class="badge-tech">Backup Scripts</span>
+              <span class="badge-tech">Modelagem NoSQL</span>
+              <span class="badge-tech">Sanitização de Dados</span>
+            </div>
+          </div>
+
+          <!-- Segurança & Governança -->
+          <div class="skill-category-card">
+            <div class="skill-category-header">
+              <i class="fa-solid fa-shield-halved"></i>
+              <h4>Segurança & LGPD</h4>
+            </div>
+            <div class="skill-items">
+              <span class="badge-tech">Fortinet NSE 1 & 2</span>
+              <span class="badge-tech">LGPD Compliance</span>
+              <span class="badge-tech">Helmet Security</span>
+              <span class="badge-tech">Rate Limiting</span>
+              <span class="badge-tech">Cove Data Protection</span>
+              <span class="badge-tech">Trilha de Auditoria</span>
+            </div>
+          </div>
+
+          <!-- Frontend & Interface -->
+          <div class="skill-category-card">
+            <div class="skill-category-header">
+              <i class="fa-solid fa-laptop-code"></i>
+              <h4>Frontend & UI/UX</h4>
+            </div>
+            <div class="skill-items">
+              <span class="badge-tech">JavaScript (ES6+)</span>
+              <span class="badge-tech">Vue.js</span>
+              <span class="badge-tech">HTML5 Semântico</span>
+              <span class="badge-tech">CSS3 / Flexbox / Grid</span>
+              <span class="badge-tech">Design Responsivo</span>
+              <span class="badge-tech">Acessibilidade (a11y)</span>
+            </div>
+          </div>
+
+          <!-- Qualidade, DevOps & Dados -->
+          <div class="skill-category-card">
+            <div class="skill-category-header">
+              <i class="fa-solid fa-chart-pie"></i>
+              <h4>Qualidade & Dados</h4>
+            </div>
+            <div class="skill-items">
+              <span class="badge-tech">Jest</span>
+              <span class="badge-tech">Supertest</span>
+              <span class="badge-tech">Git & GitHub</span>
+              <span class="badge-tech">CI/CD Workflows</span>
+              <span class="badge-tech">Power BI</span>
+              <span class="badge-tech">Monitoramento de Backup</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SEÇÃO DE OUTROS PROJETOS
+         ========================================================================== -->
+    <section class="section" id="projetos">
+      <div class="container">
+        <div class="section-header">
+          <div class="badge-executive">
+            <i class="fa-solid fa-folder-open"></i>
+            <span>Repositórios Selecionados</span>
+          </div>
+          <h2 class="section-title">Outros Projetos Desenvolvidos</h2>
+          <p class="section-subtitle">
+            Iniciativas complementares de código aberto desenvolvidas para resolver desafios de monitoramento, estado e acessibilidade.
+          </p>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Projeto 1: MONITORAMENTO-ESCOLAR -->
+          <div class="project-card">
+            <div class="project-card-header">
+              <i class="fa-regular fa-folder project-folder-icon"></i>
+              <div class="project-links">
+                <a href="https://github.com/Bruno-LimaHG/MONITORAMENTO-ESCOLAR" target="_blank" rel="noopener noreferrer" aria-label="GitHub do Monitoramento Escolar">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+              </div>
+            </div>
+            <h3 class="project-title">MONITORAMENTO-ESCOLAR</h3>
+            <p class="project-desc">
+              Sistema web dedicado ao monitoramento e acompanhamento de indicadores escolares com interface visual organizada e foco em métricas educacionais.
+            </p>
+            <div class="project-techs">
+              <span class="badge-tech">CSS3</span>
+              <span class="badge-tech">HTML5</span>
+              <span class="badge-tech">Gestão Escolar</span>
+            </div>
+          </div>
+
+          <!-- Projeto 2: LISTA-TAREFA-REDUX -->
+          <div class="project-card">
+            <div class="project-card-header">
+              <i class="fa-regular fa-folder project-folder-icon"></i>
+              <div class="project-links">
+                <a href="https://github.com/Bruno-LimaHG/LISTA-TAREFA-REDUX" target="_blank" rel="noopener noreferrer" aria-label="GitHub da Lista Tarefa Redux">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+              </div>
+            </div>
+            <h3 class="project-title">LISTA-TAREFA-REDUX</h3>
+            <p class="project-desc">
+              Aplicação focada em gerenciamento de estado global com Redux, demonstrando arquitetura de actions, reducers e fluxo unidirecional de dados.
+            </p>
+            <div class="project-techs">
+              <span class="badge-tech">JavaScript</span>
+              <span class="badge-tech">Redux</span>
+              <span class="badge-tech">Gerenciamento de Estado</span>
+            </div>
+          </div>
+
+          <!-- Projeto 3: PRODUTO-ACESSIVEL -->
+          <div class="project-card">
+            <div class="project-card-header">
+              <i class="fa-regular fa-folder project-folder-icon"></i>
+              <div class="project-links">
+                <a href="https://github.com/Bruno-LimaHG/PRODUTO-ACESSIVEL" target="_blank" rel="noopener noreferrer" aria-label="GitHub do Produto Acessível">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+              </div>
+            </div>
+            <h3 class="project-title">PRODUTO-ACESSIVEL</h3>
+            <p class="project-desc">
+              Interface projetada com base nos princípios de acessibilidade digital (WCAG/a11y), navegação por teclado e alto contraste inclusivo.
+            </p>
+            <div class="project-techs">
+              <span class="badge-tech">Acessibilidade</span>
+              <span class="badge-tech">WCAG</span>
+              <span class="badge-tech">CSS3</span>
+            </div>
+          </div>
+
+          <!-- Projeto 4: CLIMA-TEMPERATURA -->
+          <div class="project-card">
+            <div class="project-card-header">
+              <i class="fa-regular fa-folder project-folder-icon"></i>
+              <div class="project-links">
+                <a href="https://github.com/Bruno-LimaHG/CLIMA-TEMPERATURA" target="_blank" rel="noopener noreferrer" aria-label="GitHub do Clima Temperatura">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+              </div>
+            </div>
+            <h3 class="project-title">CLIMA-TEMPERATURA</h3>
+            <p class="project-desc">
+              Consumo de API meteorológica em tempo real com tratamento dinâmico de respostas assíncronas, geolocalização e estilização adaptativa.
+            </p>
+            <div class="project-techs">
+              <span class="badge-tech">JavaScript</span>
+              <span class="badge-tech">Fetch API</span>
+              <span class="badge-tech">REST Consumption</span>
+            </div>
+          </div>
+
+          <!-- Projeto 5: TESTES-CI-CD -->
+          <div class="project-card">
+            <div class="project-card-header">
+              <i class="fa-regular fa-folder project-folder-icon"></i>
+              <div class="project-links">
+                <a href="https://github.com/Bruno-LimaHG/TESTES-CI-CD" target="_blank" rel="noopener noreferrer" aria-label="GitHub de Testes CI/CD">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+              </div>
+            </div>
+            <h3 class="project-title">TESTES-CI-CD</h3>
+            <p class="project-desc">
+              Laboratório e automação de testes com pipelines de Integração e Entrega Contínua (CI/CD) para garantir confiabilidade a cada push.
+            </p>
+            <div class="project-techs">
+              <span class="badge-tech">CI/CD</span>
+              <span class="badge-tech">Pipelines</span>
+              <span class="badge-tech">Automação</span>
+            </div>
+          </div>
+
+          <!-- Projeto 6: SIGACRC Repositório -->
+          <div class="project-card" style="border-color: rgba(56, 189, 248, 0.4);">
+            <div class="project-card-header">
+              <i class="fa-solid fa-star project-folder-icon" style="color: var(--accent-cyan);"></i>
+              <div class="project-links">
+                <a href="https://github.com/Bruno-LimaHG/SIGACRC" target="_blank" rel="noopener noreferrer" aria-label="GitHub do SIGACRC">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+              </div>
+            </div>
+            <h3 class="project-title">SIGACRC (Repositório)</h3>
+            <p class="project-desc">
+              Código-fonte completo da plataforma de gestão cartorária: controllers, models Mongoose, workers BullMQ e documentação da LGPD.
+            </p>
+            <div class="project-techs">
+              <span class="badge-tech">Full Stack</span>
+              <span class="badge-tech">AWS S3</span>
+              <span class="badge-tech">Redis</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SEÇÃO DE CONTATO EXECUTIVO
+         ========================================================================== -->
+    <section class="section contact-section" id="contato">
+      <div class="container">
+        <div class="contact-card-executive">
+          <!-- Coluna 1: Informações de Contato -->
+          <div class="contact-info">
+            <div class="badge-executive">
+              <i class="fa-solid fa-paper-plane"></i>
+              <span>Canais Oficiais</span>
+            </div>
+
+            <h3>Vamos construir soluções de alto impacto juntos?</h3>
+            <p>
+              Estou à disposição para novos desafios profissionais, parcerias corporativas e projetos estratégicos de desenvolvimento de software e segurança.
+            </p>
+
+            <div class="contact-channels">
+              <!-- LinkedIn (Principal Solicitado) -->
+              <a href="https://www.linkedin.com/in/bruno-lima-20b099325/" target="_blank" rel="noopener noreferrer" class="contact-item">
+                <div class="contact-icon" style="background: rgba(0, 119, 181, 0.2); color: #0077b5;">
+                  <i class="fa-brands fa-linkedin-in"></i>
+                </div>
+                <div class="contact-meta">
+                  <span class="label">LinkedIn Oficial</span>
+                  <span class="val">linkedin.com/in/bruno-lima-20b099325</span>
+                </div>
+              </a>
+
+              <!-- GitHub -->
+              <a href="https://github.com/Bruno-LimaHG" target="_blank" rel="noopener noreferrer" class="contact-item">
+                <div class="contact-icon">
+                  <i class="fa-brands fa-github"></i>
+                </div>
+                <div class="contact-meta">
+                  <span class="label">GitHub</span>
+                  <span class="val">github.com/Bruno-LimaHG</span>
+                </div>
+              </a>
+
+              <!-- E-mail -->
+              <a href="mailto:brudeflima@gmail.com" class="contact-item">
+                <div class="contact-icon" style="background: rgba(16, 185, 129, 0.2); color: #10b981;">
+                  <i class="fa-solid fa-envelope"></i>
+                </div>
+                <div class="contact-meta">
+                  <span class="label">E-mail Direto</span>
+                  <span class="val">brudeflima@gmail.com</span>
+                </div>
+              </a>
+
+              <!-- Localização -->
+              <div class="contact-item">
+                <div class="contact-icon" style="background: rgba(245, 158, 11, 0.2); color: #f59e0b;">
+                  <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div class="contact-meta">
+                  <span class="label">Localização</span>
+                  <span class="val">São Paulo / Osasco — Brasil</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Coluna 2: Formulário de Mensagem Direta -->
+          <div class="contact-form">
+            <h4 style="font-size: 1.35rem; margin-bottom: 0.5rem;">Enviar Mensagem Direta</h4>
+            <div id="formAlert" class="form-alert"></div>
+
+            <form id="contactForm">
+              <div class="form-group">
+                <label for="nameInput">Seu Nome / Empresa</label>
+                <input type="text" id="nameInput" class="form-control" placeholder="Ex: Roberto Silva (Empresa XYZ)" required>
+              </div>
+
+              <div class="form-group">
+                <label for="emailInput">Seu E-mail Corporativo</label>
+                <input type="email" id="emailInput" class="form-control" placeholder="nome@empresa.com" required>
+              </div>
+
+              <div class="form-group">
+                <label for="subjectInput">Assunto</label>
+                <input type="text" id="subjectInput" class="form-control" placeholder="Proposta de Projeto / Oportunidade" required>
+              </div>
+
+              <div class="form-group">
+                <label for="messageInput">Mensagem</label>
+                <textarea id="messageInput" class="form-control" placeholder="Olá Bruno, gostaria de conversar sobre..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 0.5rem;">
+                <i class="fa-solid fa-paper-plane"></i>
+                <span>Enviar Contato</span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       RODAPÉ
+       ========================================================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="brand-monogram" style="width: 38px; height: 38px; font-size: 1rem;">BL</div>
+          <div>
+            <div style="font-weight: 700; color: var(--text-main);">Bruno Lima</div>
+            <div style="font-size: 0.8rem; color: var(--text-muted);">Desenvolvedor Full Stack • Magiccomp</div>
+          </div>
+        </div>
+
+        <div class="footer-socials">
+          <a href="https://www.linkedin.com/in/bruno-lima-20b099325/" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="LinkedIn">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+          <a href="https://github.com/Bruno-LimaHG" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="GitHub">
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a href="mailto:brudeflima@gmail.com" class="footer-social-link" aria-label="E-mail">
+            <i class="fa-solid fa-envelope"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 Bruno Lima. Todos os direitos reservados. Projetado com excelência executiva.
+        </div>
+        <button class="scroll-top-btn" id="scrollTopBtn" aria-label="Voltar ao Topo">
+          <i class="fa-solid fa-chevron-up"></i>
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts Interativos -->
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
